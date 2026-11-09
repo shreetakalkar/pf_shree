@@ -12,8 +12,8 @@ export const personalInfo = {
       highlights: ["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Database Management Systems", "System Design"],
     },
     {
-      institution: "Government Polytechnic, Thane",
-      degree: "Diploma in Computer Engineering",
+      institution: "Vpm polytechnic, Thane",
+      degree: "Diploma in Information technology",
       period: "2021 – 2024",
       type: "Diploma Education",
       highlights: ["Object-Oriented Programming", "Java & C/C++", "Relational Databases", "Web Technologies", "Software Engineering"],
