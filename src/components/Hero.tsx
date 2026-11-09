@@ -234,9 +234,9 @@ export const Hero: React.FC = () => {
                     <div className="pl-3 py-1 space-y-1 text-zinc-300 bg-zinc-900/60 rounded-lg border border-zinc-800/80 p-3">
                       <div><span className="text-cyan-400">name</span>: <span className="text-amber-300">"Shree Takalkar"</span></div>
                       <div><span className="text-cyan-400">role</span>: <span className="text-amber-300">"Full Stack & Backend Developer"</span></div>
-                      <div><span className="text-cyan-400">university</span>: <span className="text-zinc-300">"TSEC Mumbai (B.E. CE '27)"</span></div>
+                      <div><span className="text-cyan-400">education</span>: <span className="text-zinc-300">"TSEC (B.E. '27) & GP Thane (Diploma)"</span></div>
                       <div><span className="text-cyan-400">primaryLanguage</span>: <span className="text-indigo-400 font-bold">"Java"</span></div>
-                      <div><span className="text-cyan-400">experience</span>: <span className="text-zinc-300">["Bargenix AI Intern", "TSEC Devs Web Lead"]</span></div>
+                      <div><span className="text-cyan-400">experience</span>: <span className="text-zinc-300">["Bargenix AI", "TSEC Devs", "Symphony Fintech"]</span></div>
                       <div><span className="text-cyan-400">passions</span>: <span className="text-zinc-300">["Distributed Storage", "AI Agents", "System Design"]</span></div>
                     </div>
 

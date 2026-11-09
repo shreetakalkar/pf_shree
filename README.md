@@ -121,3 +121,4 @@ portfolio/
 ├── tsconfig.json              # TypeScript compiler configuration
 └── package.json               # Dependencies and scripts
 ```
+

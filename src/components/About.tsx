@@ -80,40 +80,54 @@ export const About: React.FC = () => {
               </div>
             </div>
 
-            {/* Education Card */}
-            <div className="glass-panel rounded-2xl p-6 border border-zinc-200 dark:border-white/10">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 shrink-0">
-                  <GraduationCap className="w-6 h-6" />
-                </div>
-                <div className="space-y-2 w-full">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white">
-                      {personalInfo.education.institution}
-                    </h3>
-                    <span className="px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
-                      {personalInfo.education.graduation}
-                    </span>
-                  </div>
-                  <p className="text-sm font-medium text-cyan-600 dark:text-cyan-400">
-                    {personalInfo.education.degree}
-                  </p>
-                  <div className="pt-2">
-                    <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider block mb-2">
-                      Key Core Competencies & Coursework:
-                    </span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {personalInfo.education.highlights.map((course) => (
-                        <span 
-                          key={course}
-                          className="px-2.5 py-1 rounded-md text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-white/5"
-                        >
-                          {course}
-                        </span>
-                      ))}
+            {/* Education Section */}
+            <div className="space-y-4">
+              <h3 className="text-sm font-mono uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+                <GraduationCap className="w-4 h-4 text-cyan-400" />
+                <span>Academic Qualifications</span>
+              </h3>
+
+              <div className="space-y-4">
+                {personalInfo.education.map((edu, idx) => (
+                  <div key={idx} className="glass-panel rounded-2xl p-6 border border-zinc-200 dark:border-white/10 hover:border-cyan-500/30 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 shrink-0">
+                        <GraduationCap className="w-6 h-6" />
+                      </div>
+                      <div className="space-y-2 w-full">
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <div>
+                            <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white">
+                              {edu.institution}
+                            </h3>
+                            <span className="text-xs text-zinc-500 font-mono">{edu.type}</span>
+                          </div>
+                          <span className="px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                            {edu.period}
+                          </span>
+                        </div>
+                        <p className="text-sm font-medium text-cyan-600 dark:text-cyan-400">
+                          {edu.degree}
+                        </p>
+                        <div className="pt-2">
+                          <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider block mb-2">
+                            Key Core Competencies & Coursework:
+                          </span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {edu.highlights.map((course) => (
+                              <span 
+                                key={course}
+                                className="px-2.5 py-1 rounded-md text-xs bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-white/5"
+                              >
+                                {course}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
 

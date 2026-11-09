@@ -3,12 +3,22 @@ export const personalInfo = {
   firstName: "Shree",
   title: "Full Stack Developer | Backend Developer",
   status: "Open to High-Impact Opportunities & Collaborations",
-  education: {
-    institution: "Thadomal Shahani Engineering College (TSEC), Mumbai",
-    degree: "B.E. Computer Engineering",
-    graduation: "Expected 2027",
-    highlights: ["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Database Management Systems", "System Design"],
-  },
+  education: [
+    {
+      institution: "Thadomal Shahani Engineering College (TSEC), Mumbai",
+      degree: "B.E. Computer Engineering",
+      period: "Expected 2027",
+      type: "Undergraduate Degree",
+      highlights: ["Data Structures & Algorithms", "Operating Systems", "Computer Networks", "Database Management Systems", "System Design"],
+    },
+    {
+      institution: "Government Polytechnic, Thane",
+      degree: "Diploma in Computer Engineering",
+      period: "2021 – 2024",
+      type: "Diploma Education",
+      highlights: ["Object-Oriented Programming", "Java & C/C++", "Relational Databases", "Web Technologies", "Software Engineering"],
+    }
+  ],
   roles: [
     "Full Stack Developer",
     "Backend Engineer",
@@ -40,4 +50,3 @@ export const personalInfo = {
   },
   resumeUrl: "#resume", // User can replace with actual resume PDF path
 };
-

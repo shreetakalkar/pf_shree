@@ -12,6 +12,7 @@ export const skillCategories = [
     icon: "Code",
     skills: [
       { name: "Java", isPrimary: true, highlight: "Primary Language / OOP & DSA", icon: "Coffee" },
+      { name: "Python", highlight: "Automation & Script Optimization", icon: "Code2" },
       { name: "JavaScript", highlight: "Modern ES6+ / Asynchronous", icon: "FileCode" },
       { name: "SQL", highlight: "Relational Queries & Optimization", icon: "Database" },
       { name: "C", highlight: "Systems Programming & Memory", icon: "Cpu" },
