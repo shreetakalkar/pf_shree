@@ -46,7 +46,7 @@ export const personalInfo = {
     github: "https://github.com/shreetakalkar",
     linkedin: "https://linkedin.com/in/shreetakalkar", // Placeholder configurable link
     leetcode: "https://leetcode.com/u/shreetakalkar", // Placeholder configurable link
-    email: "shreetakalkar2005@gmail.com", // Professional contact
+    email: "shreetakalkar087@gmail.com", // Professional contact
   },
-  resumeUrl: "#resume", // User can replace with actual resume PDF path
+  resumeUrl: "C:\portfolio\src\data\Takalkar_Shree_Resume.pdf (1).pdf", // User can replace with actual resume PDF path
 };
